@@ -1,52 +1,35 @@
-📊 CRM API Simulada – Estilo RD Station
-Este projeto simula uma API pública com dados de oportunidades comerciais, inspirada no modelo da RD Station. Ideal para testes de ingestão de dados, prototipação de dashboards (Power BI, Streamlit, etc.), análises de performance com Polars e estudos de integrações com CRMs reais.
+# 🤖 CRM Ingest – Simulação de API Estilo RD Station
 
-🚀 Visão Geral
-Este repositório contém 3 scripts principais:
+Este módulo simula dados de oportunidades comerciais no formato da API da **RD Station**.  
+É ideal para testes de ingestão, construção de pipelines de dados, prototipação de dashboards e integração com ferramentas como Power BI, Databricks ou Streamlit.
 
-Script	Descrição
-crm_data_generator.py	Gera 100.000 registros simulados de oportunidades e salva em data.json
-api_main.py	Sobe uma API Flask para servir os dados
-read_api.py	Lê os dados da API, expande campos aninhados com Polars e exporta como .xlsx
-📦 Bibliotecas Utilizadas
-🔹 Bibliotecas padrão do Python
-Biblioteca	Descrição
-json	Serializa e desserializa os dados entre Python e JSON
-os	Manipula caminhos de arquivos e verifica existência de arquivos
-random	Gera dados aleatórios para simulação realista
-datetime	Cria e manipula datas para simular created_at, updated_at, closing_date
-🔹 Bibliotecas de terceiros
-Biblioteca	Descrição
-flask	Framework leve para construir a API REST que expõe os dados
-requests	Cliente HTTP para consumir a API
-polars	Manipulação de DataFrames com alta performance (escrito em Rust)
-pandas	Exportação para .xlsx e compatibilidade com Power BI
-openpyxl	Engine utilizada pelo pandas para escrever arquivos .xlsx
-🧪 Instalação recomendada:
-bash
-Copiar
-Editar
+---
+
+## 📁 Estrutura do Módulo
+
+| Arquivo | Descrição |
+|---------|-----------|
+| `crm_data_generator.py` | Gera 100.000 registros de oportunidades e salva no arquivo `data.json` |
+| `api_main.py` | Sobe uma API local usando Flask, servindo os dados gerados |
+| `read_api.py` | Consome a API, processa os dados com Polars e exporta para Excel (.xlsx) |
+
+---
+
+## 📦 Bibliotecas Utilizadas
+
+### 🧩 Bibliotecas padrão do Python
+- `json` – manipulação e serialização dos dados
+- `os` – leitura de arquivos e caminhos
+- `random` – geração de dados simulados
+- `datetime` – controle de datas e horários
+
+### 🚀 Bibliotecas externas
+- `flask` – criação da API local
+- `requests` – consumo da API HTTP
+- `polars` – manipulação de dados com alta performance
+- `pandas` – exportação para Excel e compatibilidade com Power BI
+- `openpyxl` – engine para exportação `.xlsx`
+
+### ✅ Instalação:
+```bash
 pip install flask requests polars pandas openpyxl
-🛠️ 1. Gerador de Dados – crm_data_generator.py
-Cria o arquivo data.json com 100.000 registros simulando a estrutura da RD Station API:
-
-🧾 Campos por oportunidade:
-id, title, value, currency, won, status
-
-deal_stage: { id, name }
-
-deal_pipeline: { id, name }
-
-organization: { id, name }
-
-contacts: [ { id, name } ]
-
-custom_fields: lista com:
-
-cf_produto_interesse
-
-cf_canal_aquisicao
-
-created_at, updated_at, closing_date
-
-O resultado é um JSON pronto para alimentar dashboards ou APIs de CRM simuladas.
