@@ -24,8 +24,6 @@ Cada subpasta representa um módulo realista de um sistema analítico moderno, c
 ## 🛠️ Tecnologias utilizadas (até o momento)
 
 - Python (Polars, Pandas, Flask, Requests)
-- Databricks (em breve)
-- Power BI
 - PythonAnywhere
 - JSON, REST APIs, Excel
 - GitHub para versionamento e documentação
