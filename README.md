@@ -1,2 +1,40 @@
-# RochaLake
-Neste repositório estaremos desenvolvendo um pipeline de dados robusto de ponta a ponta até a análise no power BI
+# 🏔️ Rochalake – Portfólio de Dados
+
+**Rochalake** é o meu portfólio técnico de projetos de dados, criado para demonstrar na prática meu domínio em ingestão, transformação, exposição e análise de dados em diferentes contextos.  
+Cada subpasta representa um módulo realista de um sistema analítico moderno, com dados simulados, pipelines e integrações aplicadas.
+
+---
+
+## 🚀 Objetivos do Portfólio
+
+- Criar um repositório de **cases reais simulados**
+- Demonstrar habilidades com **ingestão, transformação e análise**
+- Praticar boas práticas de engenharia e análise de dados
+
+---
+
+## 🧱 Estrutura do Projeto
+
+| Pasta | Descrição |
+|-------|-----------|
+| [`CRM_ingest`](./CRM_ingest/README.md) | Geração de dados simulados estilo RD Station + API Flask + exportação para análise |
+
+---
+
+## 🛠️ Tecnologias utilizadas (até o momento)
+
+- Python (Polars, Pandas, Flask, Requests)
+- Databricks (em breve)
+- Power BI
+- PythonAnywhere
+- JSON, REST APIs, Excel
+- GitHub para versionamento e documentação
+
+---
+
+🙋 Sobre mim
+Sou apaixonado por dados, automação, engenharia e produtos digitais.
+Este portfólio é uma forma de compartilhar minha jornada, testar ideias e documentar aprendizados.
+
+Se quiser trocar uma ideia, colaborar ou contratar 👇
+🔗 https://www.linkedin.com/in/luis-rocha-81435918b/
