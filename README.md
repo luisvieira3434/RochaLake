@@ -1,4 +1,10 @@
-# 🏔️ Rochalake – Portfólio de Dados
+# 📊 RochaDashs - Portfólio de BI:
+
+https://www.canva.com/design/DAGdg6KHrXM/1bb8XbmYSi5MmhRF1wXVvw/edit?utm_content=DAGdg6KHrXM&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton
+
+---
+
+# 🏔️ Rochalake – Portfólio de Engenharia de Dados:
 
 **Rochalake** é o meu portfólio técnico de projetos de dados, criado para demonstrar na prática meu domínio em ingestão, transformação, exposição e análise de dados em diferentes contextos.  
 Cada subpasta representa um módulo realista de um sistema analítico moderno, com dados simulados, pipelines e integrações aplicadas.
