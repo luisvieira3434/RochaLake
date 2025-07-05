@@ -40,4 +40,4 @@ df = df.drop("custom_fields")
 # Converte para pandas e salva como XLSX
 df.to_pandas().to_excel("oportunidades_RD_simulada.xlsx", index=False)
 
-print("Arquivo .xlsx gerado com sucesso!")
+print(df)
