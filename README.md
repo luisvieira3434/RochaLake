@@ -23,7 +23,8 @@ Cada subpasta representa um módulo realista de um sistema analítico moderno, c
 
 | Pasta | Descrição |
 |-------|-----------|
-| [`CRM_ingest`](./CRM_ingest/README.md) | Geração de dados simulados estilo RD Station + API Flask + exportação para análise |
+| [`CRM_ingest`](./README_CRM.md) | Geração de dados simulados estilo RD Station + API Flask + exportação para análise |
+| [`erp_oracle_netSuite_ingest`](./README_ERP.md) | Geração de dados simulados estilo RD Station + API Flask + exportação para análise |
 
 ---
 
@@ -37,7 +38,7 @@ Cada subpasta representa um módulo realista de um sistema analítico moderno, c
 ---
 
 🙋 Sobre mim
-Sou apaixonado por dados, automação, engenharia e produtos digitais.
+Sou apaixonado por dados, automação, engenharia e produtos.
 Este portfólio é uma forma de compartilhar minha jornada, testar ideias e documentar aprendizados.
 
 Se quiser trocar uma ideia, colaborar ou contratar 👇
