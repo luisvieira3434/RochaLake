@@ -24,7 +24,7 @@ Cada subpasta representa um módulo realista de um sistema analítico moderno, c
 | Pasta | Descrição |
 |-------|-----------|
 | [`CRM_ingest`](./README_CRM.md) | Geração de dados simulados estilo RD Station + API Flask + exportação para análise |
-| [`erp_oracle_netSuite_ingest`](./README_CRM.md) | Geração de dados simulados estilo RD Station + API Flask + exportação para análise |
+| [`erp_oracle_netSuite_ingest`](./README_ERP.md) | Geração de dados simulados estilo RD Station + API Flask + exportação para análise |
 
 ---
 
