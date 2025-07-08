@@ -5,7 +5,7 @@ Gerador de oportunidades simuladas (CRM – RD Station)
 import uuid, random, datetime as dt
 from pathlib import Path
 from typing import List, Dict
-from .utils import rand_date, write_json_csv
+from .utils import rand_date, write_csv_and_upload_s3
 
 __all__ = ["run"]
 
@@ -73,7 +73,18 @@ def _generate_deal(org: Dict, seq: int, start: dt.date, end: dt.date) -> Dict:
         "source_system": "RD Station"
     }
 
-def run(base_dir: Path, orgs: List[Dict], start: dt.date, end: dt.date, max_deals: int = 5) -> List[Dict]:
+def run(
+    base_dir: Path,
+    orgs: List[Dict],
+    start: dt.date,
+    end: dt.date,
+    max_deals: int = 5,
+    bucket: str = "rocha-lake",
+    s3_folder: str = "bronze",
+    region: str = "us-east-1",
+    aws_access_key_id: str = None,
+    aws_secret_access_key: str = None
+) -> List[Dict]:
     """Gera oportunidades (deals_rd) para as organizações."""
     deals = []
     seq = 1
@@ -82,5 +93,7 @@ def run(base_dir: Path, orgs: List[Dict], start: dt.date, end: dt.date, max_deal
             deals.append(_generate_deal(org, seq, start, end))
             seq += 1
 
-    write_json_csv("deals_rd", deals, base_dir)
+    write_csv_and_upload_s3(
+        "deals_rd", deals, base_dir, bucket, s3_folder, region, aws_access_key_id, aws_secret_access_key
+    )
     return deals

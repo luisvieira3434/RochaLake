@@ -7,11 +7,19 @@ import datetime as dt
 import random
 from pathlib import Path
 from typing import List, Dict
-from .utils import make_seq_id, write_json_csv
+from .utils import make_seq_id, write_csv_and_upload_s3
 
 __all__ = ["generate_erp"]
 
-def generate_erp(deals_won: List[Dict], base_dir: Path):
+def generate_erp(
+    deals_won: List[Dict],
+    base_dir: Path,
+    bucket: str = "rocha-lake",
+    s3_folder: str = "bronze",
+    region: str = "us-east-1",
+    aws_access_key_id: str = None,
+    aws_secret_access_key: str = None
+):
     invoices, payments, gls = [], [], []
     inv_seq = pay_seq = gl_seq = 1
 
@@ -63,8 +71,8 @@ def generate_erp(deals_won: List[Dict], base_dir: Path):
             })
 
     # Salva tudo
-    write_json_csv("invoices_netsuite", invoices, base_dir)
-    write_json_csv("payments_netsuite", payments, base_dir)
-    write_json_csv("gl_netsuite", gls, base_dir)
+    write_csv_and_upload_s3("invoices_netsuite", invoices, base_dir, bucket, s3_folder, region, aws_access_key_id, aws_secret_access_key)
+    write_csv_and_upload_s3("payments_netsuite", payments, base_dir, bucket, s3_folder, region, aws_access_key_id, aws_secret_access_key)
+    write_csv_and_upload_s3("gl_netsuite", gls, base_dir, bucket, s3_folder, region, aws_access_key_id, aws_secret_access_key)
 
     return invoices, payments, gls
