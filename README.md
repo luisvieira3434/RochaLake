@@ -9,6 +9,10 @@ https://www.canva.com/design/DAGdg6KHrXM/1bb8XbmYSi5MmhRF1wXVvw/edit?utm_content
 **Rochalake** é o meu portfólio técnico de projetos de dados, criado para demonstrar na prática meu domínio em ingestão, transformação, exposição e análise de dados em diferentes contextos.  
 Cada subpasta representa um módulo realista de um sistema analítico moderno, com dados simulados, pipelines e integrações aplicadas.
 
+Arquitetura do Projeto:
+
+<img width="7840" height="5980" alt="image" src="https://github.com/user-attachments/assets/33beb574-7650-49d2-afb7-f7f1f86cb6df" />
+
 ---
 
 ## 🚀 Objetivos do Portfólio
