@@ -34,16 +34,15 @@ Arquitetura do Projeto:
 
 ## 🛠️ Tecnologias utilizadas (até o momento)
 
-- Python (Polars, Pandas, Flask, Requests)
-- PythonAnywhere
+- Python (Polars, Pandas, Flask, Requests, Random, Boto3)
 - JSON, REST APIs, Excel
 - GitHub para versionamento e documentação
 
 ---
 
 🙋 Sobre mim
-Sou apaixonado por dados, automação, engenharia e produtos.
+Sou apaixonado por engenharia e análise de dados.
 Este portfólio é uma forma de compartilhar minha jornada, testar ideias e documentar aprendizados.
 
-Se quiser trocar uma ideia, colaborar ou contratar 👇
+Se quiser trocar uma ideia ou colaborar 👇
 🔗 https://www.linkedin.com/in/luis-rocha-81435918b/
