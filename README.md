@@ -27,8 +27,8 @@ Arquitetura do Projeto:
 
 | Pasta | Descrição |
 |-------|-----------|
-| [`CRM_ingest`](./README_CRM.md) | Geração de dados simulados estilo RD Station + API Flask + exportação para análise |
-| [`erp_oracle_netSuite_ingest`](./README_ERP.md) | Geração de dados simulados estilo RD Station + API Flask + exportação para análise |
+| [`CRM_ingest`](./README_CRM.md) | Geração de dados simulados estilo RD Station |
+| [`erp_oracle_netSuite_ingest`](./README_ERP.md) | Geração de dados simulados estilo Oracle Netsuite |
 
 ---
 
